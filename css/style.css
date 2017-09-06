@@ -1,11 +1,3 @@
-/*@mixin flag($width, $height, $color, $rad, $index) {
-  position: absolute;
-  width: $width;
-  height: $height;
-  background: $color;
-  border-radius: $rad;
-  z-index: $index;
-}*/
 .container {
   display: flex;
   flex-wrap: wrap;
@@ -486,5 +478,81 @@
 .Alabama {
   background: linear-gradient(29deg, transparent 45%, #B10021 45%, #B10021 55%, transparent 55%), linear-gradient(151deg, #FFFFFF 45%, #B10021 45%, #B10021 55%, #FFFFFF 55%);
   position: relative; }
+
+.Alaska {
+  position: relative;
+  background: #061A4A; }
+  .Alaska .star-1 {
+    position: absolute;
+    top: 39.5833%;
+    left: 15.895%;
+    width: 15px;
+    height: 15px;
+    background: #FFB709;
+    -webkit-clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%); }
+  .Alaska .star-2 {
+    position: absolute;
+    top: 46.2963%;
+    left: 27.9321%;
+    width: 15px;
+    height: 15px;
+    background: #FFB709;
+    -webkit-clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%); }
+  .Alaska .star-3 {
+    position: absolute;
+    top: 55.0926%;
+    left: 33.3333%;
+    width: 15px;
+    height: 15px;
+    background: #FFB709;
+    -webkit-clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%); }
+  .Alaska .star-4 {
+    position: absolute;
+    top: 65.0463%;
+    left: 39.8148%;
+    width: 15px;
+    height: 15px;
+    background: #FFB709;
+    -webkit-clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%); }
+  .Alaska .star-5 {
+    position: absolute;
+    top: 79.3981%;
+    left: 38.7346%;
+    width: 15px;
+    height: 15px;
+    background: #FFB709;
+    -webkit-clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%); }
+  .Alaska .star-6 {
+    position: absolute;
+    top: 85.4167%;
+    left: 52.4691%;
+    width: 15px;
+    height: 15px;
+    background: #FFB709;
+    -webkit-clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%); }
+  .Alaska .star-7 {
+    position: absolute;
+    top: 73.8425%;
+    left: 57.4074%;
+    width: 15px;
+    height: 15px;
+    background: #FFB709;
+    -webkit-clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%); }
+  .Alaska .star-8 {
+    position: absolute;
+    top: 16.8981%;
+    left: 81.3272%;
+    width: 25px;
+    height: 25px;
+    background: #FFB709;
+    -webkit-clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%); }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,11 +1,19 @@
-/*@mixin flag($width, $height, $color, $rad, $index) {
+$alaska-star: #FFB709;
+
+@mixin div-data($top, $left, $width, $height, $back) {
   position: absolute;
+  top: $top;
+  left: $left;
   width: $width;
   height: $height;
-  background: $color;
-  border-radius: $rad;
-  z-index: $index;
-}*/
+  background: $back;
+}
+
+@mixin star {
+  -webkit-clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+  clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+}
+
 .container {
   display: flex;
   flex-wrap: wrap;
@@ -77,6 +85,43 @@
 }
 
 .Alabama { //56.42
-  background: linear-gradient(25deg, #FFFFFF 40%, #B10021 40%, #B10021 50%, #FFFFFF 50%);
+  background: linear-gradient(29deg, transparent 45%, #B10021 45%, #B10021 55%, transparent 55%), linear-gradient(151deg, #FFFFFF 45%, #B10021 45%, #B10021 55%, #FFFFFF 55%);
   position: relative;
+}
+
+.Alaska {
+  position: relative;
+  background: #061A4A;
+  .star-1 {
+    @include div-data(39.5833%, 15.8950%, 15px, 15px, $alaska-star);
+    @include star;
+  }
+  .star-2 {
+    @include div-data(46.2963%, 27.9321%, 15px, 15px, $alaska-star);
+    @include star;
+  }
+  .star-3 {
+    @include div-data(55.0926%, 33.3333%, 15px, 15px, $alaska-star);
+    @include star;
+  }
+  .star-4 {
+    @include div-data(65.0463%, 39.8148%, 15px, 15px, $alaska-star);
+    @include star;
+  }
+  .star-5 {
+    @include div-data(79.3981%, 38.7346%, 15px, 15px, $alaska-star);
+    @include star;
+  }
+  .star-6 {
+    @include div-data(85.4167%, 52.4691%, 15px, 15px, $alaska-star);
+    @include star;
+  }
+  .star-7 {
+    @include div-data(73.8425%, 57.4074%, 15px, 15px, $alaska-star);
+    @include star;
+  }
+  .star-8 {
+    @include div-data(16.8981%, 81.3272%, 25px, 25px, $alaska-star);
+    @include star;
+  }
 }
