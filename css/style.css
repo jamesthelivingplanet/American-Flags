@@ -1,0 +1,490 @@
+/*@mixin flag($width, $height, $color, $rad, $index) {
+  position: absolute;
+  width: $width;
+  height: $height;
+  background: $color;
+  border-radius: $rad;
+  z-index: $index;
+}*/
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  background: lightgrey;
+  padding: 10px 0; }
+
+.boxes {
+  width: 350px;
+  height: 200px;
+  background: white;
+  margin: 20px 0; }
+
+.USA {
+  background: linear-gradient(to top, #BF0A30 calc(100%/13), #FFFFFF calc(100%/13), #FFFFFF calc(100%/13*2), #BF0A30 calc(100%/13*2), #BF0A30 calc(100%/13*3), #FFFFFF calc(100%/13*3), #FFFFFF calc(100%/13*4), #BF0A30 calc(100%/13*4), #BF0A30 calc(100%/13*5), #FFFFFF calc(100%/13*5), #FFFFFF calc(100%/13*6), #BF0A30 calc(100%/13*6), #BF0A30 calc(100%/13*7), #FFFFFF calc(100%/13*7), #FFFFFF calc(100%/13*8), #BF0A30 calc(100%/13*8), #BF0A30 calc(100%/13*9), #FFFFFF calc(100%/13*9), #FFFFFF calc(100%/13*10), #BF0A30 calc(100%/13*10), #BF0A30 calc(100%/13*11), #FFFFFF calc(100%/13*11), #FFFFFF calc(100%/13*12), #BF0A30 calc(100%/13*12), #BF0A30 calc(100%/13*13), #FFFFFF calc(100%/13*13));
+  position: relative; }
+  .USA .blue-box {
+    position: absolute;
+    height: 53.85%;
+    width: 40%;
+    background: #002868; }
+    .USA .blue-box .row-1 {
+      position: absolute;
+      width: 83.422%;
+      height: 10%;
+      left: 8.289%;
+      top: 9.2%; }
+      .USA .blue-box .row-1 .star-0 {
+        position: absolute;
+        width: 10%;
+        height: 100%;
+        left: 0%;
+        background: #FFFFFF;
+        -webkit-clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+        clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%); }
+      .USA .blue-box .row-1 .star-1 {
+        position: absolute;
+        width: 10%;
+        height: 100%;
+        left: 18%;
+        background: #FFFFFF;
+        -webkit-clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+        clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%); }
+      .USA .blue-box .row-1 .star-2 {
+        position: absolute;
+        width: 10%;
+        height: 100%;
+        left: 36%;
+        background: #FFFFFF;
+        -webkit-clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+        clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%); }
+      .USA .blue-box .row-1 .star-3 {
+        position: absolute;
+        width: 10%;
+        height: 100%;
+        left: 54%;
+        background: #FFFFFF;
+        -webkit-clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+        clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%); }
+      .USA .blue-box .row-1 .star-4 {
+        position: absolute;
+        width: 10%;
+        height: 100%;
+        left: 72%;
+        background: #FFFFFF;
+        -webkit-clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+        clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%); }
+      .USA .blue-box .row-1 .star-5 {
+        position: absolute;
+        width: 10%;
+        height: 100%;
+        left: 90%;
+        background: #FFFFFF;
+        -webkit-clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+        clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%); }
+    .USA .blue-box .row-2 {
+      position: absolute;
+      width: 66.8422%;
+      height: 10%;
+      left: 16.5789%;
+      top: 18.4%; }
+      .USA .blue-box .row-2 .star-0 {
+        position: absolute;
+        width: 10%;
+        height: 100%;
+        left: 0%;
+        background: #FFFFFF;
+        -webkit-clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+        clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%); }
+      .USA .blue-box .row-2 .star-1 {
+        position: absolute;
+        width: 10%;
+        height: 100%;
+        left: 22%;
+        background: #FFFFFF;
+        -webkit-clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+        clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%); }
+      .USA .blue-box .row-2 .star-2 {
+        position: absolute;
+        width: 10%;
+        height: 100%;
+        left: 44%;
+        background: #FFFFFF;
+        -webkit-clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+        clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%); }
+      .USA .blue-box .row-2 .star-3 {
+        position: absolute;
+        width: 10%;
+        height: 100%;
+        left: 66%;
+        background: #FFFFFF;
+        -webkit-clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+        clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%); }
+      .USA .blue-box .row-2 .star-4 {
+        position: absolute;
+        width: 10%;
+        height: 100%;
+        left: 88%;
+        background: #FFFFFF;
+        -webkit-clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+        clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%); }
+    .USA .blue-box .row-3 {
+      position: absolute;
+      width: 83.422%;
+      height: 10%;
+      left: 8.289%;
+      top: 27.6%; }
+      .USA .blue-box .row-3 .star-0 {
+        position: absolute;
+        width: 10%;
+        height: 100%;
+        left: 0%;
+        background: #FFFFFF;
+        -webkit-clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+        clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%); }
+      .USA .blue-box .row-3 .star-1 {
+        position: absolute;
+        width: 10%;
+        height: 100%;
+        left: 18%;
+        background: #FFFFFF;
+        -webkit-clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+        clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%); }
+      .USA .blue-box .row-3 .star-2 {
+        position: absolute;
+        width: 10%;
+        height: 100%;
+        left: 36%;
+        background: #FFFFFF;
+        -webkit-clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+        clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%); }
+      .USA .blue-box .row-3 .star-3 {
+        position: absolute;
+        width: 10%;
+        height: 100%;
+        left: 54%;
+        background: #FFFFFF;
+        -webkit-clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+        clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%); }
+      .USA .blue-box .row-3 .star-4 {
+        position: absolute;
+        width: 10%;
+        height: 100%;
+        left: 72%;
+        background: #FFFFFF;
+        -webkit-clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+        clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%); }
+      .USA .blue-box .row-3 .star-5 {
+        position: absolute;
+        width: 10%;
+        height: 100%;
+        left: 90%;
+        background: #FFFFFF;
+        -webkit-clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+        clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%); }
+    .USA .blue-box .row-4 {
+      position: absolute;
+      width: 66.8422%;
+      height: 10%;
+      left: 16.5789%;
+      top: 36.8%; }
+      .USA .blue-box .row-4 .star-0 {
+        position: absolute;
+        width: 10%;
+        height: 100%;
+        left: 0%;
+        background: #FFFFFF;
+        -webkit-clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+        clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%); }
+      .USA .blue-box .row-4 .star-1 {
+        position: absolute;
+        width: 10%;
+        height: 100%;
+        left: 22%;
+        background: #FFFFFF;
+        -webkit-clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+        clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%); }
+      .USA .blue-box .row-4 .star-2 {
+        position: absolute;
+        width: 10%;
+        height: 100%;
+        left: 44%;
+        background: #FFFFFF;
+        -webkit-clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+        clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%); }
+      .USA .blue-box .row-4 .star-3 {
+        position: absolute;
+        width: 10%;
+        height: 100%;
+        left: 66%;
+        background: #FFFFFF;
+        -webkit-clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+        clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%); }
+      .USA .blue-box .row-4 .star-4 {
+        position: absolute;
+        width: 10%;
+        height: 100%;
+        left: 88%;
+        background: #FFFFFF;
+        -webkit-clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+        clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%); }
+    .USA .blue-box .row-5 {
+      position: absolute;
+      width: 83.422%;
+      height: 10%;
+      left: 8.289%;
+      top: 46%; }
+      .USA .blue-box .row-5 .star-0 {
+        position: absolute;
+        width: 10%;
+        height: 100%;
+        left: 0%;
+        background: #FFFFFF;
+        -webkit-clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+        clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%); }
+      .USA .blue-box .row-5 .star-1 {
+        position: absolute;
+        width: 10%;
+        height: 100%;
+        left: 18%;
+        background: #FFFFFF;
+        -webkit-clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+        clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%); }
+      .USA .blue-box .row-5 .star-2 {
+        position: absolute;
+        width: 10%;
+        height: 100%;
+        left: 36%;
+        background: #FFFFFF;
+        -webkit-clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+        clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%); }
+      .USA .blue-box .row-5 .star-3 {
+        position: absolute;
+        width: 10%;
+        height: 100%;
+        left: 54%;
+        background: #FFFFFF;
+        -webkit-clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+        clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%); }
+      .USA .blue-box .row-5 .star-4 {
+        position: absolute;
+        width: 10%;
+        height: 100%;
+        left: 72%;
+        background: #FFFFFF;
+        -webkit-clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+        clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%); }
+      .USA .blue-box .row-5 .star-5 {
+        position: absolute;
+        width: 10%;
+        height: 100%;
+        left: 90%;
+        background: #FFFFFF;
+        -webkit-clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+        clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%); }
+    .USA .blue-box .row-6 {
+      position: absolute;
+      width: 66.8422%;
+      height: 10%;
+      left: 16.5789%;
+      top: 55.2%; }
+      .USA .blue-box .row-6 .star-0 {
+        position: absolute;
+        width: 10%;
+        height: 100%;
+        left: 0%;
+        background: #FFFFFF;
+        -webkit-clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+        clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%); }
+      .USA .blue-box .row-6 .star-1 {
+        position: absolute;
+        width: 10%;
+        height: 100%;
+        left: 22%;
+        background: #FFFFFF;
+        -webkit-clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+        clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%); }
+      .USA .blue-box .row-6 .star-2 {
+        position: absolute;
+        width: 10%;
+        height: 100%;
+        left: 44%;
+        background: #FFFFFF;
+        -webkit-clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+        clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%); }
+      .USA .blue-box .row-6 .star-3 {
+        position: absolute;
+        width: 10%;
+        height: 100%;
+        left: 66%;
+        background: #FFFFFF;
+        -webkit-clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+        clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%); }
+      .USA .blue-box .row-6 .star-4 {
+        position: absolute;
+        width: 10%;
+        height: 100%;
+        left: 88%;
+        background: #FFFFFF;
+        -webkit-clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+        clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%); }
+    .USA .blue-box .row-7 {
+      position: absolute;
+      width: 83.422%;
+      height: 10%;
+      left: 8.289%;
+      top: 64.4%; }
+      .USA .blue-box .row-7 .star-0 {
+        position: absolute;
+        width: 10%;
+        height: 100%;
+        left: 0%;
+        background: #FFFFFF;
+        -webkit-clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+        clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%); }
+      .USA .blue-box .row-7 .star-1 {
+        position: absolute;
+        width: 10%;
+        height: 100%;
+        left: 18%;
+        background: #FFFFFF;
+        -webkit-clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+        clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%); }
+      .USA .blue-box .row-7 .star-2 {
+        position: absolute;
+        width: 10%;
+        height: 100%;
+        left: 36%;
+        background: #FFFFFF;
+        -webkit-clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+        clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%); }
+      .USA .blue-box .row-7 .star-3 {
+        position: absolute;
+        width: 10%;
+        height: 100%;
+        left: 54%;
+        background: #FFFFFF;
+        -webkit-clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+        clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%); }
+      .USA .blue-box .row-7 .star-4 {
+        position: absolute;
+        width: 10%;
+        height: 100%;
+        left: 72%;
+        background: #FFFFFF;
+        -webkit-clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+        clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%); }
+      .USA .blue-box .row-7 .star-5 {
+        position: absolute;
+        width: 10%;
+        height: 100%;
+        left: 90%;
+        background: #FFFFFF;
+        -webkit-clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+        clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%); }
+    .USA .blue-box .row-8 {
+      position: absolute;
+      width: 66.8422%;
+      height: 10%;
+      left: 16.5789%;
+      top: 73.6%; }
+      .USA .blue-box .row-8 .star-0 {
+        position: absolute;
+        width: 10%;
+        height: 100%;
+        left: 0%;
+        background: #FFFFFF;
+        -webkit-clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+        clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%); }
+      .USA .blue-box .row-8 .star-1 {
+        position: absolute;
+        width: 10%;
+        height: 100%;
+        left: 22%;
+        background: #FFFFFF;
+        -webkit-clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+        clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%); }
+      .USA .blue-box .row-8 .star-2 {
+        position: absolute;
+        width: 10%;
+        height: 100%;
+        left: 44%;
+        background: #FFFFFF;
+        -webkit-clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+        clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%); }
+      .USA .blue-box .row-8 .star-3 {
+        position: absolute;
+        width: 10%;
+        height: 100%;
+        left: 66%;
+        background: #FFFFFF;
+        -webkit-clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+        clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%); }
+      .USA .blue-box .row-8 .star-4 {
+        position: absolute;
+        width: 10%;
+        height: 100%;
+        left: 88%;
+        background: #FFFFFF;
+        -webkit-clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+        clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%); }
+    .USA .blue-box .row-9 {
+      position: absolute;
+      width: 83.422%;
+      height: 10%;
+      left: 8.289%;
+      top: 82.8%; }
+      .USA .blue-box .row-9 .star-0 {
+        position: absolute;
+        width: 10%;
+        height: 100%;
+        left: 0%;
+        background: #FFFFFF;
+        -webkit-clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+        clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%); }
+      .USA .blue-box .row-9 .star-1 {
+        position: absolute;
+        width: 10%;
+        height: 100%;
+        left: 18%;
+        background: #FFFFFF;
+        -webkit-clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+        clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%); }
+      .USA .blue-box .row-9 .star-2 {
+        position: absolute;
+        width: 10%;
+        height: 100%;
+        left: 36%;
+        background: #FFFFFF;
+        -webkit-clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+        clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%); }
+      .USA .blue-box .row-9 .star-3 {
+        position: absolute;
+        width: 10%;
+        height: 100%;
+        left: 54%;
+        background: #FFFFFF;
+        -webkit-clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+        clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%); }
+      .USA .blue-box .row-9 .star-4 {
+        position: absolute;
+        width: 10%;
+        height: 100%;
+        left: 72%;
+        background: #FFFFFF;
+        -webkit-clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+        clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%); }
+      .USA .blue-box .row-9 .star-5 {
+        position: absolute;
+        width: 10%;
+        height: 100%;
+        left: 90%;
+        background: #FFFFFF;
+        -webkit-clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+        clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%); }
+
+.Alabama {
+  background: linear-gradient(29deg, transparent 45%, #B10021 45%, #B10021 55%, transparent 55%), linear-gradient(151deg, #FFFFFF 45%, #B10021 45%, #B10021 55%, #FFFFFF 55%);
+  position: relative; }
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,82 @@
+/*@mixin flag($width, $height, $color, $rad, $index) {
+  position: absolute;
+  width: $width;
+  height: $height;
+  background: $color;
+  border-radius: $rad;
+  z-index: $index;
+}*/
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  background: lightgrey;
+  padding: 10px 0;
+}
+
+.boxes {
+  width: 350px;
+  height: 200px;
+  background: white;
+  margin: 20px 0;
+}
+
+.USA {
+  background: linear-gradient(to top, #BF0A30 calc(100%/13), #FFFFFF calc(100%/13), #FFFFFF calc(100%/13*2), #BF0A30 calc(100%/13*2), #BF0A30 calc(100%/13*3), #FFFFFF calc(100%/13*3), #FFFFFF calc(100%/13*4), #BF0A30 calc(100%/13*4), #BF0A30 calc(100%/13*5), #FFFFFF calc(100%/13*5), #FFFFFF calc(100%/13*6), #BF0A30 calc(100%/13*6), #BF0A30 calc(100%/13*7), #FFFFFF calc(100%/13*7), #FFFFFF calc(100%/13*8), #BF0A30 calc(100%/13*8), #BF0A30 calc(100%/13*9), #FFFFFF calc(100%/13*9), #FFFFFF calc(100%/13*10), #BF0A30 calc(100%/13*10), #BF0A30 calc(100%/13*11), #FFFFFF calc(100%/13*11), #FFFFFF calc(100%/13*12), #BF0A30 calc(100%/13*12), #BF0A30 calc(100%/13*13), #FFFFFF calc(100%/13*13));
+  position: relative;
+
+  .blue-box {
+    position: absolute;
+    height: 53.85%;
+    width: 40%;
+    background: #002868;
+    @for $j from 1 through 9 {
+       @if $j % 2 == 0{
+        .row-#{$j} {
+          position: absolute;
+          width: 66.8422%;
+          height: 10%;
+          left: 16.5789%;
+          top: $j*9.2%;
+          @for $i from 0 through 4 {
+            .star-#{$i} {
+              position: absolute;
+              width: 10%;
+              height: 100%;
+              left: $i*22%;
+              background: #FFFFFF;
+              -webkit-clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+              clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+            }
+          }
+        }
+      }
+      @else {
+        .row-#{$j} {
+          position: absolute;
+          width: 83.422%;
+          height: 10%;
+          left: 8.289%;
+          top: $j*9.2%;
+          @for $i from 0 through 5 {
+            .star-#{$i} {
+              position: absolute;
+              width: 10%;
+              height: 100%;
+              left: $i*18%;
+              background: #FFFFFF;
+              -webkit-clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+              clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.Alabama { //56.42
+  background: linear-gradient(25deg, #FFFFFF 40%, #B10021 40%, #B10021 50%, #FFFFFF 50%);
+  position: relative;
+}
