@@ -1,17 +1,23 @@
 $alaska-star: #FFB709;
-
-@mixin div-data($top, $left, $width, $height, $back) {
+$arkansas-shiraz: #B20931;
+$arkansas-midnight_blue: #003366;
+@mixin div-data($top, $left, $width, $height, $back, $right: none, $bottom: none) {
   position: absolute;
   top: $top;
   left: $left;
+  right: $right;
+  bottom: $bottom;
   width: $width;
   height: $height;
   background: $back;
 }
-
 @mixin star {
   -webkit-clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
   clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+}
+@mixin flag($back) {
+  position: relative;
+  background: $back;
 }
 
 .container {
@@ -24,10 +30,12 @@ $alaska-star: #FFB709;
 }
 
 .boxes {
-  width: 350px;
-  height: 200px;
+  width: 180px;
+  height: 120px;
   background: white;
   margin: 20px 0;
+  overflow: hidden;
+  border: 1px solid #efefef;
 }
 
 .USA {
@@ -84,44 +92,118 @@ $alaska-star: #FFB709;
   }
 }
 
-.Alabama { //56.42
-  background: linear-gradient(29deg, transparent 45%, #B10021 45%, #B10021 55%, transparent 55%), linear-gradient(151deg, #FFFFFF 45%, #B10021 45%, #B10021 55%, #FFFFFF 55%);
+.Alabama {
+  //56.42
+  background: linear-gradient(33deg, transparent 45%, #B10021 45%, #B10021 55%, transparent 55%), linear-gradient(147deg, #FFFFFF 45%, #B10021 45%, #B10021 55%, #FFFFFF 55%);
   position: relative;
 }
 
 .Alaska {
-  position: relative;
-  background: #061A4A;
+  @include flag(#061A4A);
+
   .star-1 {
-    @include div-data(39.5833%, 15.8950%, 15px, 15px, $alaska-star);
+    @include div-data(32.5833%, 15.8950%, 15px, 15px, $alaska-star);
+    @include star;
+  }
+
+  .star-2 {
+    @include div-data(39.2963%, 27.9321%, 15px, 15px, $alaska-star);
+    @include star;
+  }
+
+  .star-3 {
+    @include div-data(48.0926%, 33.3333%, 15px, 15px, $alaska-star);
+    @include star;
+  }
+
+  .star-4 {
+    @include div-data(58.0463%, 39.8148%, 15px, 15px, $alaska-star);
+    @include star;
+  }
+
+  .star-5 {
+    @include div-data(72.3981%, 38.7346%, 15px, 15px, $alaska-star);
+    @include star;
+  }
+
+  .star-6 {
+    @include div-data(79.4167%, 52.4691%, 15px, 15px, $alaska-star);
+    @include star;
+  }
+
+  .star-7 {
+    @include div-data(67.8425%, 57.4074%, 15px, 15px, $alaska-star);
+    @include star;
+  }
+
+  .star-8 {
+    @include div-data(9.8981%, 81.3272%, 25px, 25px, $alaska-star);
+    @include star;
+  }
+}
+
+.Arkansas {
+  $ark-back: linear-gradient(33.65deg, $arkansas-shiraz 29.0811%, transparent 29.0811%) , linear-gradient(146.35deg, $arkansas-shiraz 29.0811%, transparent 29.0811%) , linear-gradient(213.65deg, $arkansas-shiraz 29.0811%, transparent 29.0811%) , linear-gradient(326.35deg, $arkansas-shiraz 29.0811%, transparent 29.0811%) , linear-gradient(33.65deg, $arkansas-midnight_blue 34.1009%, transparent 34.1009%) , linear-gradient(146.35deg, $arkansas-midnight_blue 34.1009%, transparent 34.1009%) , linear-gradient(213.65deg, $arkansas-midnight_blue 34.1009%, transparent 34.1009%) , linear-gradient(326.35deg, $arkansas-midnight_blue 34.1009%, transparent 34.1009%), #FFFFFF;
+  @include flag($ark-back);
+  text-align: center;
+  font-family: sans-serif;
+  font-weight: bold;
+  color: $arkansas-midnight_blue;
+  line-height: 110px;
+  font-size: 12px;
+  .star-1 {
+    @include div-data(25%, 46%, 15px, 15px, $arkansas-midnight_blue);
     @include star;
   }
   .star-2 {
-    @include div-data(46.2963%, 27.9321%, 15px, 15px, $alaska-star);
+    @include div-data(55%, 37%, 15px, 15px, $arkansas-midnight_blue);
     @include star;
   }
   .star-3 {
-    @include div-data(55.0926%, 33.3333%, 15px, 15px, $alaska-star);
+    @include div-data(55%, none, 15px, 15px, $arkansas-midnight_blue, 37%);
     @include star;
   }
   .star-4 {
-    @include div-data(65.0463%, 39.8148%, 15px, 15px, $alaska-star);
+    @include div-data(60%, 46%, 15px, 15px, $arkansas-midnight_blue);
     @include star;
+    transform: rotate(180deg);
   }
-  .star-5 {
-    @include div-data(79.3981%, 38.7346%, 15px, 15px, $alaska-star);
-    @include star;
+  @for $i from 0 through 6 {
+    .sstar-#{$i} {
+      @if $i == 6 {
+        transform: rotate(-45deg);
+      } @else if $i > 0 {
+        transform: rotate(-20deg);
+      }
+      @include div-data(10.5%+6*$i, 48%+6*$i, 8px, 8px, #FFFFFF);
+      @include star;
+    }
+    .rstar-#{$i} {
+      @if $i == 6 {
+        transform: rotate(45deg);
+      } @else if $i > 0 {
+        transform: rotate(20deg);
+      }
+      @include div-data(10.5%+6*$i, none, 8px, 8px, #FFFFFF, 48%+6*$i);
+      @include star;
+    }
+    .llstar-#{$i} {
+      @if $i == 0 {
+        transform: rotate(180deg);
+      } @else {
+        transform: rotate(165deg);
+      }
+      @include div-data(none, none, 8px, 8px, #FFFFFF, 48%+6*$i, 10.5%+6*$i);
+      @include star;
+    }
+    .lrstar-#{$i} {
+      transform: rotate(205deg);
+      @include div-data(none, 48%+6*$i, 8px, 8px, #FFFFFF, none, 10.5%+6*$i);
+      @include star;
+    }
   }
-  .star-6 {
-    @include div-data(85.4167%, 52.4691%, 15px, 15px, $alaska-star);
-    @include star;
-  }
-  .star-7 {
-    @include div-data(73.8425%, 57.4074%, 15px, 15px, $alaska-star);
-    @include star;
-  }
-  .star-8 {
-    @include div-data(16.8981%, 81.3272%, 25px, 25px, $alaska-star);
-    @include star;
-  }
+}
+
+.Arkansas::after {
+  content: "ARKANSAS";
 }

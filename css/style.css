@@ -7,10 +7,12 @@
   padding: 10px 0; }
 
 .boxes {
-  width: 350px;
-  height: 200px;
+  width: 180px;
+  height: 120px;
   background: white;
-  margin: 20px 0; }
+  margin: 20px 0;
+  overflow: hidden;
+  border: 1px solid #efefef; }
 
 .USA {
   background: linear-gradient(to top, #BF0A30 calc(100%/13), #FFFFFF calc(100%/13), #FFFFFF calc(100%/13*2), #BF0A30 calc(100%/13*2), #BF0A30 calc(100%/13*3), #FFFFFF calc(100%/13*3), #FFFFFF calc(100%/13*4), #BF0A30 calc(100%/13*4), #BF0A30 calc(100%/13*5), #FFFFFF calc(100%/13*5), #FFFFFF calc(100%/13*6), #BF0A30 calc(100%/13*6), #BF0A30 calc(100%/13*7), #FFFFFF calc(100%/13*7), #FFFFFF calc(100%/13*8), #BF0A30 calc(100%/13*8), #BF0A30 calc(100%/13*9), #FFFFFF calc(100%/13*9), #FFFFFF calc(100%/13*10), #BF0A30 calc(100%/13*10), #BF0A30 calc(100%/13*11), #FFFFFF calc(100%/13*11), #FFFFFF calc(100%/13*12), #BF0A30 calc(100%/13*12), #BF0A30 calc(100%/13*13), #FFFFFF calc(100%/13*13));
@@ -476,7 +478,7 @@
         clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%); }
 
 .Alabama {
-  background: linear-gradient(29deg, transparent 45%, #B10021 45%, #B10021 55%, transparent 55%), linear-gradient(151deg, #FFFFFF 45%, #B10021 45%, #B10021 55%, #FFFFFF 55%);
+  background: linear-gradient(33deg, transparent 45%, #B10021 45%, #B10021 55%, transparent 55%), linear-gradient(147deg, #FFFFFF 45%, #B10021 45%, #B10021 55%, #FFFFFF 55%);
   position: relative; }
 
 .Alaska {
@@ -484,8 +486,10 @@
   background: #061A4A; }
   .Alaska .star-1 {
     position: absolute;
-    top: 39.5833%;
+    top: 32.5833%;
     left: 15.895%;
+    right: none;
+    bottom: none;
     width: 15px;
     height: 15px;
     background: #FFB709;
@@ -493,8 +497,10 @@
     clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%); }
   .Alaska .star-2 {
     position: absolute;
-    top: 46.2963%;
+    top: 39.2963%;
     left: 27.9321%;
+    right: none;
+    bottom: none;
     width: 15px;
     height: 15px;
     background: #FFB709;
@@ -502,8 +508,10 @@
     clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%); }
   .Alaska .star-3 {
     position: absolute;
-    top: 55.0926%;
+    top: 48.0926%;
     left: 33.3333%;
+    right: none;
+    bottom: none;
     width: 15px;
     height: 15px;
     background: #FFB709;
@@ -511,8 +519,10 @@
     clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%); }
   .Alaska .star-4 {
     position: absolute;
-    top: 65.0463%;
+    top: 58.0463%;
     left: 39.8148%;
+    right: none;
+    bottom: none;
     width: 15px;
     height: 15px;
     background: #FFB709;
@@ -520,8 +530,10 @@
     clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%); }
   .Alaska .star-5 {
     position: absolute;
-    top: 79.3981%;
+    top: 72.3981%;
     left: 38.7346%;
+    right: none;
+    bottom: none;
     width: 15px;
     height: 15px;
     background: #FFB709;
@@ -529,8 +541,10 @@
     clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%); }
   .Alaska .star-6 {
     position: absolute;
-    top: 85.4167%;
+    top: 79.4167%;
     left: 52.4691%;
+    right: none;
+    bottom: none;
     width: 15px;
     height: 15px;
     background: #FFB709;
@@ -538,8 +552,10 @@
     clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%); }
   .Alaska .star-7 {
     position: absolute;
-    top: 73.8425%;
+    top: 67.8425%;
     left: 57.4074%;
+    right: none;
+    bottom: none;
     width: 15px;
     height: 15px;
     background: #FFB709;
@@ -547,12 +563,406 @@
     clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%); }
   .Alaska .star-8 {
     position: absolute;
-    top: 16.8981%;
+    top: 9.8981%;
     left: 81.3272%;
+    right: none;
+    bottom: none;
     width: 25px;
     height: 25px;
     background: #FFB709;
     -webkit-clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
     clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%); }
+
+.Arkansas {
+  position: relative;
+  background: linear-gradient(33.65deg, #B20931 29.0811%, transparent 29.0811%), linear-gradient(146.35deg, #B20931 29.0811%, transparent 29.0811%), linear-gradient(213.65deg, #B20931 29.0811%, transparent 29.0811%), linear-gradient(326.35deg, #B20931 29.0811%, transparent 29.0811%), linear-gradient(33.65deg, #003366 34.1009%, transparent 34.1009%), linear-gradient(146.35deg, #003366 34.1009%, transparent 34.1009%), linear-gradient(213.65deg, #003366 34.1009%, transparent 34.1009%), linear-gradient(326.35deg, #003366 34.1009%, transparent 34.1009%), #FFFFFF;
+  text-align: center;
+  font-family: sans-serif;
+  font-weight: bold;
+  color: #003366;
+  line-height: 110px;
+  font-size: 12px; }
+  .Arkansas .star-1 {
+    position: absolute;
+    top: 25%;
+    left: 46%;
+    right: none;
+    bottom: none;
+    width: 15px;
+    height: 15px;
+    background: #003366;
+    -webkit-clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%); }
+  .Arkansas .star-2 {
+    position: absolute;
+    top: 55%;
+    left: 37%;
+    right: none;
+    bottom: none;
+    width: 15px;
+    height: 15px;
+    background: #003366;
+    -webkit-clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%); }
+  .Arkansas .star-3 {
+    position: absolute;
+    top: 55%;
+    left: none;
+    right: 37%;
+    bottom: none;
+    width: 15px;
+    height: 15px;
+    background: #003366;
+    -webkit-clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%); }
+  .Arkansas .star-4 {
+    position: absolute;
+    top: 60%;
+    left: 46%;
+    right: none;
+    bottom: none;
+    width: 15px;
+    height: 15px;
+    background: #003366;
+    -webkit-clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    transform: rotate(180deg); }
+  .Arkansas .sstar-0 {
+    position: absolute;
+    top: 10.5%;
+    left: 48%;
+    right: none;
+    bottom: none;
+    width: 8px;
+    height: 8px;
+    background: #FFFFFF;
+    -webkit-clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%); }
+  .Arkansas .rstar-0 {
+    position: absolute;
+    top: 10.5%;
+    left: none;
+    right: 48%;
+    bottom: none;
+    width: 8px;
+    height: 8px;
+    background: #FFFFFF;
+    -webkit-clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%); }
+  .Arkansas .llstar-0 {
+    transform: rotate(180deg);
+    position: absolute;
+    top: none;
+    left: none;
+    right: 48%;
+    bottom: 10.5%;
+    width: 8px;
+    height: 8px;
+    background: #FFFFFF;
+    -webkit-clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%); }
+  .Arkansas .lrstar-0 {
+    transform: rotate(205deg);
+    position: absolute;
+    top: none;
+    left: 48%;
+    right: none;
+    bottom: 10.5%;
+    width: 8px;
+    height: 8px;
+    background: #FFFFFF;
+    -webkit-clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%); }
+  .Arkansas .sstar-1 {
+    transform: rotate(-20deg);
+    position: absolute;
+    top: 16.5%;
+    left: 54%;
+    right: none;
+    bottom: none;
+    width: 8px;
+    height: 8px;
+    background: #FFFFFF;
+    -webkit-clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%); }
+  .Arkansas .rstar-1 {
+    transform: rotate(20deg);
+    position: absolute;
+    top: 16.5%;
+    left: none;
+    right: 54%;
+    bottom: none;
+    width: 8px;
+    height: 8px;
+    background: #FFFFFF;
+    -webkit-clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%); }
+  .Arkansas .llstar-1 {
+    transform: rotate(165deg);
+    position: absolute;
+    top: none;
+    left: none;
+    right: 54%;
+    bottom: 16.5%;
+    width: 8px;
+    height: 8px;
+    background: #FFFFFF;
+    -webkit-clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%); }
+  .Arkansas .lrstar-1 {
+    transform: rotate(205deg);
+    position: absolute;
+    top: none;
+    left: 54%;
+    right: none;
+    bottom: 16.5%;
+    width: 8px;
+    height: 8px;
+    background: #FFFFFF;
+    -webkit-clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%); }
+  .Arkansas .sstar-2 {
+    transform: rotate(-20deg);
+    position: absolute;
+    top: 22.5%;
+    left: 60%;
+    right: none;
+    bottom: none;
+    width: 8px;
+    height: 8px;
+    background: #FFFFFF;
+    -webkit-clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%); }
+  .Arkansas .rstar-2 {
+    transform: rotate(20deg);
+    position: absolute;
+    top: 22.5%;
+    left: none;
+    right: 60%;
+    bottom: none;
+    width: 8px;
+    height: 8px;
+    background: #FFFFFF;
+    -webkit-clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%); }
+  .Arkansas .llstar-2 {
+    transform: rotate(165deg);
+    position: absolute;
+    top: none;
+    left: none;
+    right: 60%;
+    bottom: 22.5%;
+    width: 8px;
+    height: 8px;
+    background: #FFFFFF;
+    -webkit-clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%); }
+  .Arkansas .lrstar-2 {
+    transform: rotate(205deg);
+    position: absolute;
+    top: none;
+    left: 60%;
+    right: none;
+    bottom: 22.5%;
+    width: 8px;
+    height: 8px;
+    background: #FFFFFF;
+    -webkit-clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%); }
+  .Arkansas .sstar-3 {
+    transform: rotate(-20deg);
+    position: absolute;
+    top: 28.5%;
+    left: 66%;
+    right: none;
+    bottom: none;
+    width: 8px;
+    height: 8px;
+    background: #FFFFFF;
+    -webkit-clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%); }
+  .Arkansas .rstar-3 {
+    transform: rotate(20deg);
+    position: absolute;
+    top: 28.5%;
+    left: none;
+    right: 66%;
+    bottom: none;
+    width: 8px;
+    height: 8px;
+    background: #FFFFFF;
+    -webkit-clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%); }
+  .Arkansas .llstar-3 {
+    transform: rotate(165deg);
+    position: absolute;
+    top: none;
+    left: none;
+    right: 66%;
+    bottom: 28.5%;
+    width: 8px;
+    height: 8px;
+    background: #FFFFFF;
+    -webkit-clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%); }
+  .Arkansas .lrstar-3 {
+    transform: rotate(205deg);
+    position: absolute;
+    top: none;
+    left: 66%;
+    right: none;
+    bottom: 28.5%;
+    width: 8px;
+    height: 8px;
+    background: #FFFFFF;
+    -webkit-clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%); }
+  .Arkansas .sstar-4 {
+    transform: rotate(-20deg);
+    position: absolute;
+    top: 34.5%;
+    left: 72%;
+    right: none;
+    bottom: none;
+    width: 8px;
+    height: 8px;
+    background: #FFFFFF;
+    -webkit-clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%); }
+  .Arkansas .rstar-4 {
+    transform: rotate(20deg);
+    position: absolute;
+    top: 34.5%;
+    left: none;
+    right: 72%;
+    bottom: none;
+    width: 8px;
+    height: 8px;
+    background: #FFFFFF;
+    -webkit-clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%); }
+  .Arkansas .llstar-4 {
+    transform: rotate(165deg);
+    position: absolute;
+    top: none;
+    left: none;
+    right: 72%;
+    bottom: 34.5%;
+    width: 8px;
+    height: 8px;
+    background: #FFFFFF;
+    -webkit-clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%); }
+  .Arkansas .lrstar-4 {
+    transform: rotate(205deg);
+    position: absolute;
+    top: none;
+    left: 72%;
+    right: none;
+    bottom: 34.5%;
+    width: 8px;
+    height: 8px;
+    background: #FFFFFF;
+    -webkit-clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%); }
+  .Arkansas .sstar-5 {
+    transform: rotate(-20deg);
+    position: absolute;
+    top: 40.5%;
+    left: 78%;
+    right: none;
+    bottom: none;
+    width: 8px;
+    height: 8px;
+    background: #FFFFFF;
+    -webkit-clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%); }
+  .Arkansas .rstar-5 {
+    transform: rotate(20deg);
+    position: absolute;
+    top: 40.5%;
+    left: none;
+    right: 78%;
+    bottom: none;
+    width: 8px;
+    height: 8px;
+    background: #FFFFFF;
+    -webkit-clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%); }
+  .Arkansas .llstar-5 {
+    transform: rotate(165deg);
+    position: absolute;
+    top: none;
+    left: none;
+    right: 78%;
+    bottom: 40.5%;
+    width: 8px;
+    height: 8px;
+    background: #FFFFFF;
+    -webkit-clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%); }
+  .Arkansas .lrstar-5 {
+    transform: rotate(205deg);
+    position: absolute;
+    top: none;
+    left: 78%;
+    right: none;
+    bottom: 40.5%;
+    width: 8px;
+    height: 8px;
+    background: #FFFFFF;
+    -webkit-clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%); }
+  .Arkansas .sstar-6 {
+    transform: rotate(-45deg);
+    position: absolute;
+    top: 46.5%;
+    left: 84%;
+    right: none;
+    bottom: none;
+    width: 8px;
+    height: 8px;
+    background: #FFFFFF;
+    -webkit-clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%); }
+  .Arkansas .rstar-6 {
+    transform: rotate(45deg);
+    position: absolute;
+    top: 46.5%;
+    left: none;
+    right: 84%;
+    bottom: none;
+    width: 8px;
+    height: 8px;
+    background: #FFFFFF;
+    -webkit-clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%); }
+  .Arkansas .llstar-6 {
+    transform: rotate(165deg);
+    position: absolute;
+    top: none;
+    left: none;
+    right: 84%;
+    bottom: 46.5%;
+    width: 8px;
+    height: 8px;
+    background: #FFFFFF;
+    -webkit-clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%); }
+  .Arkansas .lrstar-6 {
+    transform: rotate(205deg);
+    position: absolute;
+    top: none;
+    left: 84%;
+    right: none;
+    bottom: 46.5%;
+    width: 8px;
+    height: 8px;
+    background: #FFFFFF;
+    -webkit-clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%); }
+
+.Arkansas::after {
+  content: "ARKANSAS"; }
 
 /*# sourceMappingURL=style.css.map */
