@@ -1,6 +1,14 @@
 $alaska-star: #FFB709;
 $arkansas-shiraz: #B20931;
 $arkansas-midnight_blue: #003366;
+$california-old_glory_red: #B71234;
+$california-irish_green: #008542;
+$california-maple_sugar: #BD8A5E;
+$california-seal: #584528;
+$colorado-gold: #F7D146;
+$colorado-red: #C02831;
+$colorado-blue: #072A83;
+
 @mixin div-data($top, $left, $width, $height, $back, $right: none, $bottom: none) {
   position: absolute;
   top: $top;
@@ -191,13 +199,13 @@ $arkansas-midnight_blue: #003366;
       @if $i == 0 {
         transform: rotate(180deg);
       } @else {
-        transform: rotate(165deg);
+        transform: rotate(205deg);
       }
       @include div-data(none, none, 8px, 8px, #FFFFFF, 48%+6*$i, 10.5%+6*$i);
       @include star;
     }
     .lrstar-#{$i} {
-      transform: rotate(205deg);
+      transform: rotate(165deg);
       @include div-data(none, 48%+6*$i, 8px, 8px, #FFFFFF, none, 10.5%+6*$i);
       @include star;
     }
@@ -206,4 +214,32 @@ $arkansas-midnight_blue: #003366;
 
 .Arkansas::after {
   content: "ARKANSAS";
+}
+
+.California {
+  @include flag(linear-gradient(to top, $california-old_glory_red calc(100%/6), #FFFFFF calc(100%/6)));
+  font-family:  "Droid sans", sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  color: $california-seal;
+  line-height: 170px;
+  text-align: center;
+
+  .star {
+    @include div-data(calc(100%/5), calc(100%/6), 18px, 18px, $california-old_glory_red);
+    @include star;
+  }
+}
+
+.California::after {
+  content: "CALIFORNIA REPUBLIC";
+}
+
+.Colorado {
+  $colorado-back: radial-gradient(circle at 75.87px 60px , $colorado-gold calc(100%/6), $colorado-red calc(100%/6), $colorado-red calc(100%/3), transparent calc(100%/3)), linear-gradient(to top, $colorado-blue calc(100%/3), #FFFFFF calc(100%/3), #FFFFFF calc(100%/3*2), $colorado-blue calc(100%/3*2));//;
+  @include flag($colorado-back);
+}
+
+.Connecticut {
+
 }
