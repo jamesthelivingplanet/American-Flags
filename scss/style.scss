@@ -44,6 +44,11 @@ $colorado-blue: #072A83;
   margin: 20px 0;
   overflow: hidden;
   border: 1px solid #efefef;
+  transition: .5s ease-in;
+}
+
+.boxes:hover {
+  transform: scale(1.5);
 }
 
 .USA {
@@ -236,7 +241,7 @@ $colorado-blue: #072A83;
 }
 
 .Colorado {
-  $colorado-back: radial-gradient(circle at 75.87px 60px , $colorado-gold calc(100%/6), $colorado-red calc(100%/6), $colorado-red calc(100%/3), transparent calc(100%/3)), linear-gradient(to top, $colorado-blue calc(100%/3), #FFFFFF calc(100%/3), #FFFFFF calc(100%/3*2), $colorado-blue calc(100%/3*2));//;
+  $colorado-back: radial-gradient(circle at 75.87px 60px, $colorado-gold calc(100%/6), transparent calc(100%/6)), radial-gradient(circle at 115px 60px, #FFFFFF calc(100%/6.6), transparent calc(100%/6.6)), radial-gradient(circle at 110px 60px, #FFFFFF calc(100%/7), transparent calc(100%/7)), radial-gradient(circle at 105px 60px, #FFFFFF calc(100%/7.4), transparent calc(100%/7.4)), radial-gradient(circle at 100px 60px, #FFFFFF calc(100%/7.8), transparent calc(100%/7.8)), radial-gradient(circle at 95px 60px, #FFFFFF calc(100%/8.3), transparent calc(100%/8.3)), radial-gradient(circle at 75.87px 60px, $colorado-red calc(100%/3), transparent calc(100%/3)), linear-gradient(to top, $colorado-blue calc(100%/3), #FFFFFF calc(100%/3), #FFFFFF calc(100%/3*2), $colorado-blue calc(100%/3*2));//;
   @include flag($colorado-back);
 }
 
