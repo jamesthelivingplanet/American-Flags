@@ -997,4 +997,43 @@
   position: relative;
   background: radial-gradient(circle at 75.87px 60px, #F7D146 calc(100%/6), transparent calc(100%/6)), radial-gradient(circle at 115px 60px, #FFFFFF calc(100%/6.6), transparent calc(100%/6.6)), radial-gradient(circle at 110px 60px, #FFFFFF calc(100%/7), transparent calc(100%/7)), radial-gradient(circle at 105px 60px, #FFFFFF calc(100%/7.4), transparent calc(100%/7.4)), radial-gradient(circle at 100px 60px, #FFFFFF calc(100%/7.8), transparent calc(100%/7.8)), radial-gradient(circle at 95px 60px, #FFFFFF calc(100%/8.3), transparent calc(100%/8.3)), radial-gradient(circle at 75.87px 60px, #C02831 calc(100%/3), transparent calc(100%/3)), linear-gradient(to top, #072A83 calc(100%/3), #FFFFFF calc(100%/3), #FFFFFF calc(100%/3*2), #072A83 calc(100%/3*2)); }
 
+.Connecticut {
+  position: relative;
+  background: #0D2D84; }
+
+.Delaware {
+  position: relative;
+  background: linear-gradient(33.65deg, #77A3A1 35%, transparent 35%), linear-gradient(146.35deg, #77A3A1 35%, transparent 35%), linear-gradient(213.65deg, #77A3A1 35%, transparent 35%), linear-gradient(326.35deg, #77A3A1 35%, transparent 35%), linear-gradient(33.65deg, #F0DD83 34.1009%, #F0DD83 34.1009%), linear-gradient(146.35deg, #F0DD83 34.1009%, #F0DD83 34.1009%), linear-gradient(213.65deg, #F0DD83 34.1009%, #F0DD83 34.1009%), linear-gradient(326.35deg, #F0DD83 34.1009%, #F0DD83 34.1009%);
+  text-align: center;
+  font-family: serif;
+  font-weight: bold;
+  line-height: 215px;
+  color: #FFFFFF;
+  font-size: 8px; }
+
+.Delaware::before {
+  content: "DECEMBER 7, 1787"; }
+
+.Florida {
+  position: relative;
+  background: radial-gradient(circle at 90px 60px, #FFBA00 calc(100%/4), transparent calc(100%/4)), radial-gradient(circle at 90px 60px, #B10021 calc(100%/3.1), transparent calc(100%/3.1)), radial-gradient(circle at 90px 60px, #FFBA00 calc(100%/3), transparent calc(100%/3)), linear-gradient(33deg, transparent 45%, #B10021 45%, #B10021 55%, transparent 55%), linear-gradient(147deg, #FFFFFF 45%, #B10021 45%, #B10021 55%, #FFFFFF 55%); }
+
+.Georgia {
+  position: relative;
+  background: linear-gradient(to top, #B70022 calc(100%/3), white calc(100%/3), white calc(100%/3*2), #B70022 calc(100%/3*2)); }
+
+.Georgia::after {
+  position: absolute;
+  content: "IN GOD WE TRUST";
+  box-sizing: border-box;
+  color: gold;
+  font-size: 4px;
+  text-align: center;
+  line-height: 80px;
+  background: #0039A6;
+  height: 80px;
+  width: 70px;
+  left: 0;
+  padding-top: 16px; }
+
 /*# sourceMappingURL=style.css.map */

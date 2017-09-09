@@ -8,6 +8,11 @@ $california-seal: #584528;
 $colorado-gold: #F7D146;
 $colorado-red: #C02831;
 $colorado-blue: #072A83;
+$connecticut-blue: #0D2D84;
+$delaware-green: #77A3A1;
+$delaware-yellow: #F0DD83;
+$georgia-red: #B70022;
+$georgia-blue: #002955;
 
 @mixin div-data($top, $left, $width, $height, $back, $right: none, $bottom: none) {
   position: absolute;
@@ -246,5 +251,44 @@ $colorado-blue: #072A83;
 }
 
 .Connecticut {
+  @include flag($connecticut-blue);
+}
 
+.Delaware {
+  $del-back: linear-gradient(33.65deg, $delaware-green 35%, transparent 35%) , linear-gradient(146.35deg, $delaware-green 35%, transparent 35%) , linear-gradient(213.65deg, $delaware-green 35%, transparent 35%) , linear-gradient(326.35deg, $delaware-green 35%, transparent 35%) , linear-gradient(33.65deg, $delaware-yellow 34.1009%, $delaware-yellow 34.1009%) , linear-gradient(146.35deg, $delaware-yellow 34.1009%, $delaware-yellow 34.1009%) , linear-gradient(213.65deg, $delaware-yellow 34.1009%, $delaware-yellow 34.1009%) , linear-gradient(326.35deg, $delaware-yellow 34.1009%, $delaware-yellow 34.1009%);
+  @include flag($del-back);
+  text-align: center;
+  font-family: serif;
+  font-weight: bold;
+  line-height: 215px;
+  color: #FFFFFF;
+  font-size: 8px;
+}
+
+.Delaware::before {
+  content: "DECEMBER 7, 1787";
+}
+
+.Florida {
+  $florida-back: radial-gradient(circle at 90px 60px, #FFBA00 calc(100%/4), transparent calc(100%/4)), radial-gradient(circle at 90px 60px, #B10021 calc(100%/3.1), transparent calc(100%/3.1)), radial-gradient(circle at 90px 60px, #FFBA00 calc(100%/3), transparent calc(100%/3)), linear-gradient(33deg, transparent 45%, #B10021 45%, #B10021 55%, transparent 55%), linear-gradient(147deg, #FFFFFF 45%, #B10021 45%, #B10021 55%, #FFFFFF 55%);
+  @include flag($florida-back);
+}
+
+.Georgia {
+  @include flag(linear-gradient(to top, $georgia-red calc(100%/3), white calc(100%/3), white calc(100%/3*2), $georgia-red calc(100%/3*2)));
+}
+
+.Georgia::after {
+  position: absolute;
+  content: "IN GOD WE TRUST";
+  box-sizing: border-box;
+  color: gold;
+  font-size: 4px;
+  text-align: center;
+  line-height: 80px;
+  background: #0039A6;
+  height: 80px;
+  width: 70px;
+  left: 0;
+  padding-top: 16px;
 }
