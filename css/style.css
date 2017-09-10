@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .container {
   display: flex;
   flex-wrap: wrap;
@@ -1046,5 +1047,24 @@
   width: 44%;
   height: 50%;
   background: linear-gradient(to right, transparent 45%, #D00C27 45%, #D00C27 55%, transparent 55%), linear-gradient(to bottom, transparent 43%, #D00C27 43%, #D00C27 57%, transparent 57%), linear-gradient(to right, transparent 40%, white 40%, white 60%, transparent 60%), linear-gradient(to bottom, transparent 38%, white 38%, white 62%, transparent 62%), linear-gradient(37deg, transparent 47%, #D00C27 47%, #D00C27 50%, transparent 50%), linear-gradient(144deg, transparent 47%, #D00C27 47%, #D00C27 50%, transparent 50%), linear-gradient(37deg, transparent 45%, white 45%, white 55%, transparent 55%), linear-gradient(144deg, transparent 45%, white 45%, white 55%, transparent 55%), #001F7E; }
+
+.NewMexico {
+  position: relative;
+  background: radial-gradient(circle at center, #FFD700 12%, #BF0A30 12%, #BF0A30 16%, transparent 16%), linear-gradient(to top, #FFD700 20%, transparent 20%, transparent 80%, #FFD700 80%), linear-gradient(to left, #FFD700 25%, transparent 25%, transparent 75%, #FFD700 75%), linear-gradient(to left, transparent 47%, #BF0A30 47%, #BF0A30 49%, transparent 49%, transparent 51%, #BF0A30 51%, #BF0A30 53%, transparent 53%), linear-gradient(to top, transparent 45%, #BF0A30 45%, #BF0A30 49%, transparent 49%, transparent 51%, #BF0A30 51%, #BF0A30 55%, transparent 55%), linear-gradient(to top, #FFD700 25%, transparent 25%, transparent 75%, #FFD700 75%), linear-gradient(to left, #FFD700 30%, transparent 30%, transparent 70%, #FFD700 70%), linear-gradient(to left, transparent 44.5%, #BF0A30 44.5%, #BF0A30 46%, transparent 46%, transparent 54%, #BF0A30 54%, #BF0A30 55.5%, transparent 55.5%), linear-gradient(to top, transparent 40%, #BF0A30 40%, #BF0A30 43%, transparent 43%, transparent 57%, #BF0A30 57%, #BF0A30 60%, transparent 60%), linear-gradient(to left, #FFD700 25%, transparent 25%, transparent 75%, #FFD700 75%), #FFD700; }
+
+.Texas {
+  position: relative;
+  background: linear-gradient(to top, #BF0A30 50%, white 50%); }
+
+.Texas::before {
+  position: absolute;
+  content: "★";
+  font-size: 60px;
+  width: calc(100%/3);
+  height: 100%;
+  background: #002868;
+  color: white;
+  text-align: center;
+  line-height: 110px; }
 
 /*# sourceMappingURL=style.css.map */
