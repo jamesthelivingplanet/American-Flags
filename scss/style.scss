@@ -67,6 +67,7 @@ html {
   align-items: center;
   padding: 10px 0;
   margin-top: 50px;
+  min-width: 550px;
 }
 
 .box {
@@ -80,7 +81,7 @@ html {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   text-align: center;
   transition: box-shadow .5s;
-  transition: transform .2s;
+  transition: transform .5s;
   border-radius: 5px;
 }
 
