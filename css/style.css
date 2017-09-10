@@ -1,23 +1,57 @@
 @charset "UTF-8";
+* {
+  font-family: "Droid Sans", sans-serif; }
+
+body,
+html {
+  background: linear-gradient(45deg, #ECEBE4, #f7f5f6); }
+
+.info {
+  margin: auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; }
+
+.item {
+  margin-top: 5px;
+  margin-bottom: 5px; }
+
 .container {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
+  padding: 10px 0;
+  margin-top: 50px; }
+
+.box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 250px;
+  height: 300px;
   background: lightgrey;
-  padding: 10px 0; }
+  margin: auto auto 15px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
+  transition: box-shadow .5s;
+  transition: transform .2s;
+  border-radius: 5px; }
+
+.box:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+  transform: scale(1.2); }
 
 .boxes {
+  display: inline-block;
   width: 180px;
   height: 120px;
   background: white;
-  margin: 20px 0;
+  margin: auto;
   overflow: hidden;
   border: 1px solid #efefef;
-  transition: .5s ease-in; }
-
-.boxes:hover {
-  transform: scale(1.5); }
+  transition: 0.1s linear; }
 
 .USA {
   background: linear-gradient(to top, #BF0A30 calc(100%/13), #FFFFFF calc(100%/13), #FFFFFF calc(100%/13*2), #BF0A30 calc(100%/13*2), #BF0A30 calc(100%/13*3), #FFFFFF calc(100%/13*3), #FFFFFF calc(100%/13*4), #BF0A30 calc(100%/13*4), #BF0A30 calc(100%/13*5), #FFFFFF calc(100%/13*5), #FFFFFF calc(100%/13*6), #BF0A30 calc(100%/13*6), #BF0A30 calc(100%/13*7), #FFFFFF calc(100%/13*7), #FFFFFF calc(100%/13*8), #BF0A30 calc(100%/13*8), #BF0A30 calc(100%/13*9), #FFFFFF calc(100%/13*9), #FFFFFF calc(100%/13*10), #BF0A30 calc(100%/13*10), #BF0A30 calc(100%/13*11), #FFFFFF calc(100%/13*11), #FFFFFF calc(100%/13*12), #BF0A30 calc(100%/13*12), #BF0A30 calc(100%/13*13), #FFFFFF calc(100%/13*13));
@@ -1044,6 +1078,8 @@
 .Hawaii::before {
   position: absolute;
   content: "";
+  left: 0;
+  top: 0;
   width: 44%;
   height: 50%;
   background: linear-gradient(to right, transparent 45%, #D00C27 45%, #D00C27 55%, transparent 55%), linear-gradient(to bottom, transparent 43%, #D00C27 43%, #D00C27 57%, transparent 57%), linear-gradient(to right, transparent 40%, white 40%, white 60%, transparent 60%), linear-gradient(to bottom, transparent 38%, white 38%, white 62%, transparent 62%), linear-gradient(37deg, transparent 47%, #D00C27 47%, #D00C27 50%, transparent 50%), linear-gradient(144deg, transparent 47%, #D00C27 47%, #D00C27 50%, transparent 50%), linear-gradient(37deg, transparent 45%, white 45%, white 55%, transparent 55%), linear-gradient(144deg, transparent 45%, white 45%, white 55%, transparent 55%), #001F7E; }
@@ -1058,6 +1094,7 @@
 
 .Texas::before {
   position: absolute;
+  left: 0;
   content: "★";
   font-size: 60px;
   width: calc(100%/3);

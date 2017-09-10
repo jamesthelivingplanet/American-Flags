@@ -19,7 +19,6 @@ $newmexico-yellow: #FFD700;
 $newmexico-red: #BF0A30;
 $texas-dark_red: #BF0A30;
 $texas-royal_blue: #002868;
-
 @mixin div-data($top, $left, $width, $height, $back, $right: none, $bottom: none) {
   position: absolute;
   top: $top;
@@ -39,27 +38,66 @@ $texas-royal_blue: #002868;
   background: $back;
 }
 
+* {
+  font-family: "Droid Sans", sans-serif;
+}
+
+body,
+html {
+  background: linear-gradient(45deg, #ECEBE4, #f7f5f6);
+}
+
+.info {
+  margin: auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.item {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
 .container {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
-  background: lightgrey;
   padding: 10px 0;
+  margin-top: 50px;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 250px;
+  height: 300px;
+  background: lightgrey;
+  margin: auto auto 15px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
+  transition: box-shadow .5s;
+  transition: transform .2s;
+  border-radius: 5px;
+}
+
+.box:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+  transform: scale(1.2);
 }
 
 .boxes {
+  display: inline-block;
   width: 180px;
   height: 120px;
   background: white;
-  margin: 20px 0;
+  margin: auto;
   overflow: hidden;
   border: 1px solid #efefef;
-  transition: .5s ease-in;
-}
-
-.boxes:hover {
-  transform: scale(1.5);
+  transition: 0.1s linear;
 }
 
 .USA {
@@ -175,18 +213,22 @@ $texas-royal_blue: #002868;
   color: $arkansas-midnight_blue;
   line-height: 110px;
   font-size: 12px;
+
   .star-1 {
     @include div-data(25%, 46%, 15px, 15px, $arkansas-midnight_blue);
     @include star;
   }
+
   .star-2 {
     @include div-data(55%, 37%, 15px, 15px, $arkansas-midnight_blue);
     @include star;
   }
+
   .star-3 {
     @include div-data(55%, none, 15px, 15px, $arkansas-midnight_blue, 37%);
     @include star;
   }
+
   .star-4 {
     @include div-data(60%, 46%, 15px, 15px, $arkansas-midnight_blue);
     @include star;
@@ -196,30 +238,36 @@ $texas-royal_blue: #002868;
     .sstar-#{$i} {
       @if $i == 6 {
         transform: rotate(-45deg);
-      } @else if $i > 0 {
+      }
+      @else if $i > 0 {
         transform: rotate(-20deg);
       }
       @include div-data(10.5%+6*$i, 48%+6*$i, 8px, 8px, #FFFFFF);
       @include star;
     }
+
     .rstar-#{$i} {
       @if $i == 6 {
         transform: rotate(45deg);
-      } @else if $i > 0 {
+      }
+      @else if $i > 0 {
         transform: rotate(20deg);
       }
       @include div-data(10.5%+6*$i, none, 8px, 8px, #FFFFFF, 48%+6*$i);
       @include star;
     }
+
     .llstar-#{$i} {
       @if $i == 0 {
         transform: rotate(180deg);
-      } @else {
+      }
+      @else {
         transform: rotate(205deg);
       }
       @include div-data(none, none, 8px, 8px, #FFFFFF, 48%+6*$i, 10.5%+6*$i);
       @include star;
     }
+
     .lrstar-#{$i} {
       transform: rotate(165deg);
       @include div-data(none, 48%+6*$i, 8px, 8px, #FFFFFF, none, 10.5%+6*$i);
@@ -234,7 +282,7 @@ $texas-royal_blue: #002868;
 
 .California {
   @include flag(linear-gradient(to top, $california-old_glory_red calc(100%/6), #FFFFFF calc(100%/6)));
-  font-family:  "Droid sans", sans-serif;
+  font-family: "Droid sans", sans-serif;
   font-size: 12px;
   font-weight: bold;
   color: $california-seal;
@@ -252,7 +300,7 @@ $texas-royal_blue: #002868;
 }
 
 .Colorado {
-  $colorado-back: radial-gradient(circle at 75.87px 60px, $colorado-gold calc(100%/6), transparent calc(100%/6)), radial-gradient(circle at 115px 60px, #FFFFFF calc(100%/6.6), transparent calc(100%/6.6)), radial-gradient(circle at 110px 60px, #FFFFFF calc(100%/7), transparent calc(100%/7)), radial-gradient(circle at 105px 60px, #FFFFFF calc(100%/7.4), transparent calc(100%/7.4)), radial-gradient(circle at 100px 60px, #FFFFFF calc(100%/7.8), transparent calc(100%/7.8)), radial-gradient(circle at 95px 60px, #FFFFFF calc(100%/8.3), transparent calc(100%/8.3)), radial-gradient(circle at 75.87px 60px, $colorado-red calc(100%/3), transparent calc(100%/3)), linear-gradient(to top, $colorado-blue calc(100%/3), #FFFFFF calc(100%/3), #FFFFFF calc(100%/3*2), $colorado-blue calc(100%/3*2));//;
+  $colorado-back: radial-gradient(circle at 75.87px 60px, $colorado-gold calc(100%/6), transparent calc(100%/6)), radial-gradient(circle at 115px 60px, #FFFFFF calc(100%/6.6), transparent calc(100%/6.6)), radial-gradient(circle at 110px 60px, #FFFFFF calc(100%/7), transparent calc(100%/7)), radial-gradient(circle at 105px 60px, #FFFFFF calc(100%/7.4), transparent calc(100%/7.4)), radial-gradient(circle at 100px 60px, #FFFFFF calc(100%/7.8), transparent calc(100%/7.8)), radial-gradient(circle at 95px 60px, #FFFFFF calc(100%/8.3), transparent calc(100%/8.3)), radial-gradient(circle at 75.87px 60px, $colorado-red calc(100%/3), transparent calc(100%/3)), linear-gradient(to top, $colorado-blue calc(100%/3), #FFFFFF calc(100%/3), #FFFFFF calc(100%/3*2), $colorado-blue calc(100%/3*2)); //;
   @include flag($colorado-back);
 }
 
@@ -306,10 +354,11 @@ $texas-royal_blue: #002868;
 .Hawaii::before {
   position: absolute;
   content: "";
+  left: 0;
+  top: 0;
   width: 44%;
   height: 50%;
   background: linear-gradient(to right, transparent 45%, $hawaii-red 45%, $hawaii-red 55%, transparent 55%), linear-gradient(to bottom, transparent 43%, $hawaii-red 43%, $hawaii-red 57%, transparent 57%), linear-gradient(to right, transparent 40%, white 40%, white 60%, transparent 60%), linear-gradient(to bottom, transparent 38%, white 38%, white 62%, transparent 62%), linear-gradient(37deg, transparent 47%, $hawaii-red 47%, $hawaii-red 50%, transparent 50%), linear-gradient(144deg, transparent 47%, $hawaii-red 47%, $hawaii-red 50%, transparent 50%), linear-gradient(37deg, transparent 45%, white 45%, white 55%, transparent 55%), linear-gradient(144deg, transparent 45%, white 45%, white 55%, transparent 55%), $hawaii-blue; //25
-
 }
 
 .NewMexico {
@@ -323,6 +372,7 @@ $texas-royal_blue: #002868;
 
 .Texas::before {
   position: absolute;
+  left: 0;
   content: "★";
   font-size: 60px;
   width: calc(100%/3);
