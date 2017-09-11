@@ -60,6 +60,14 @@ html {
   margin-bottom: 5px;
 }
 
+.title {
+  font-weight: bold;
+}
+
+.number {
+  color: darkgrey;
+}
+
 .container {
   display: flex;
   flex-wrap: wrap;
@@ -80,14 +88,13 @@ html {
   margin: auto auto 15px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   text-align: center;
-  transition: box-shadow .5s;
-  transition: transform .5s;
+  transition: all .2s ease-in-out;
   border-radius: 5px;
 }
 
 .box:hover {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
-  transform: scale(1.2);
+  //transform: scale(1.2);
 }
 
 .boxes {
@@ -382,4 +389,18 @@ html {
   color: white;
   text-align: center;
   line-height: 110px;
+}
+
+.DC {
+  $dc-back: linear-gradient(to bottom, white calc((3/10)*100%), red  calc((3/10)*100%), red calc((5/10)*100%), white calc((5/10)*100%), white calc((6/10)*100%), red calc((6/10)*100%), red calc((8/10)*100%), white calc((8/10)*100%));
+  @include flag($dc-back);
+}
+
+.DC::before {
+  content: "★ ★ ★";
+  line-height: 35px;
+  color: red;
+  text-align: center;
+  font-size: 35px;
+  letter-spacing: 1px;
 }
