@@ -1121,4 +1121,19 @@ html {
   font-size: 35px;
   letter-spacing: 1px; }
 
+.Rico {
+  position: relative;
+  background: linear-gradient(34deg, #004FF1 25%, transparent 15%) 0 -60px, linear-gradient(146deg, #004FF1 25%, transparent 15%) 0 -60px, linear-gradient(to top, #EE0000 calc(100%/5), white calc(100%/5), white calc(100%/5*2), #EE0000 calc(100%/5*2), #EE0000 calc(100%/5*3), white calc(100%/5*3), white calc(100%/5*4), #EE0000 calc(100%/5*4)); }
+
+.Rico::before {
+  position: absolute;
+  left: 0;
+  width: 35%;
+  height: 100%;
+  color: white;
+  font-size: 40px;
+  line-height: 120px;
+  text-align: center;
+  content: "★"; }
+
 /*# sourceMappingURL=style.css.map */
