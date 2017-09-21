@@ -88,7 +88,7 @@ html {
   margin: auto auto 15px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   text-align: center;
-  transition: all .2s ease-in-out;
+  transition: all 0.2s ease-in-out;
   border-radius: 5px;
 }
 
@@ -297,6 +297,30 @@ html {
   line-height: 170px;
   text-align: center;
 
+  .bear {
+    position: absolute;
+    left: 32.5%;
+    top: 15%;
+    width: 35%;
+    height: 60%;
+    background: url("http://res.cloudinary.com/anewmodern/image/upload/v1505964981/5956c72ffd0adbc9876dce9b729b057c_qmonli.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 2;
+  }
+
+  .grass {
+    position: absolute;
+    left: 32%;
+    top: 20%;
+    width: 40%;
+    height: 40%;
+    -webkit-clip-path: ellipse(49% 30% at 50% 99%);
+    clip-path: ellipse(49% 30% at 50% 99%);
+    background: #008542;
+    z-index: 1;
+  }
+
   .star {
     @include div-data(calc(100%/5), calc(100%/6), 18px, 18px, $california-old_glory_red);
     @include star;
@@ -314,6 +338,17 @@ html {
 
 .Connecticut {
   @include flag($connecticut-blue);
+
+  .seal {
+    position: absolute;
+    width: 60%;
+    height: 60%;
+    top: 20%;
+    left: 20%;
+    background: url("http://res.cloudinary.com/anewmodern/image/upload/v1505966385/imageedit_20_4488360967_rtlzmr.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
 }
 
 .Delaware {
@@ -392,7 +427,7 @@ html {
 }
 
 .DC {
-  $dc-back: linear-gradient(to bottom, white calc((3/10)*100%), red  calc((3/10)*100%), red calc((5/10)*100%), white calc((5/10)*100%), white calc((6/10)*100%), red calc((6/10)*100%), red calc((8/10)*100%), white calc((8/10)*100%));
+  $dc-back: linear-gradient(to bottom, white calc((3/10)*100%), red calc((3/10)*100%), red calc((5/10)*100%), white calc((5/10)*100%), white calc((6/10)*100%), red calc((6/10)*100%), red calc((8/10)*100%), white calc((8/10)*100%));
   @include flag($dc-back);
 }
 
